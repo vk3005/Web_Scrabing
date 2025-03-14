@@ -7,7 +7,7 @@ def scrape_and_save(url, filename):
         article = Article(url)
         article.download()
         article.parse()
-        text_content = article.text
+        text_content = article.text 
         
         with open(filename, 'w', encoding='utf-8') as file:
             file.write(text_content)
